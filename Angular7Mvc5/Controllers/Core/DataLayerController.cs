@@ -9,7 +9,7 @@ namespace Angular7Mvc5.Controllers.Core
 {
     public class DataLayerController
     {
-        private const string connectionString = "data source=GIULIO-PC\\SQLEXPRESS; initial catalog=MyDB;Integrated Security=True";
+        private const string connectionString = "data source=GIULIO-PC; initial catalog=MyDB;Integrated Security=True";
 
         public DataTable Select(string storedProcedureorCommandText, bool isStoredProcedure = true)
         {
@@ -25,12 +25,7 @@ namespace Angular7Mvc5.Controllers.Core
                         command.CommandType = CommandType.Text;
                     }
                     command.CommandText = storedProcedureorCommandText;
-
-                    if (connection.State == ConnectionState.Closed)
-                    {
-                        connection.Open();
-                    }
-                    
+                    connection.Open();
 
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                     dataAdapter.Fill(dataTable);
