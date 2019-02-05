@@ -111,6 +111,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bundles\3rdpartylicenses.txt" />
+    <Content Include="Bundles\favicon.ico" />
+    <Content Include="Bundles\fontawesome-webfont.912ec66d7572ff821749.svg" />
+    <Content Include="Bundles\index.html" />
+    <Content Include="Bundles\main.1b4ff9651909cd87d2e6.js" />
+    <Content Include="Bundles\polyfills.46532d96d3286697c138.js" />
+    <Content Include="Bundles\runtime.a5dd35324ddfd942bef1.js" />
+    <Content Include="Bundles\styles.d42120219b876ab79626.css" />
+    <Content Include="Bundles\zone.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -134,6 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Bundles\fontawesome-webfont.674f50d287a8c48dc19b.eot" />
+    <Content Include="Bundles\fontawesome-webfont.af7ae505a9eed503f8b8.woff2" />
+    <Content Include="Bundles\fontawesome-webfont.b06871f281fee6b241d6.ttf" />
+    <Content Include="Bundles\fontawesome-webfont.fee66e712a8a08eef580.woff" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
